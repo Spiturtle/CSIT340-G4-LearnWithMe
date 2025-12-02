@@ -22,7 +22,7 @@ const Dashboard = ({ user, onLogout }) => {
       <aside className="sidebar">
         <div className="sidebar-header">
           <div className="logo">
-            <span className="logo-icon">📚</span>
+            <span className="logo-icon"></span>
             <span className="logo-text">LearnWithMe</span>
           </div>
         </div>
@@ -32,19 +32,19 @@ const Dashboard = ({ user, onLogout }) => {
             className={`nav-item ${currentView === 'decks' ? 'active' : ''}`}
             onClick={handleBackToDecks}
           >
-            <span className="nav-icon">🗂️</span>
+            <span className="nav-icon"></span>
             <span>My Decks</span>
           </button>
           <button className="nav-item">
-            <span className="nav-icon">📊</span>
+            <span className="nav-icon"></span>
             <span>Progress</span>
           </button>
           <button className="nav-item">
-            <span className="nav-icon">⭐</span>
+            <span className="nav-icon"></span>
             <span>Favorites</span>
           </button>
           <button className="nav-item">
-            <span className="nav-icon">⚙️</span>
+            <span className="nav-icon"></span>
             <span>Settings</span>
           </button>
         </nav>

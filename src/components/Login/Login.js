@@ -90,16 +90,7 @@ const Login = ({ onNavigate, onLogin }) => {
           <button type="submit" className="login-btn">
             Sign In
           </button>
-
-          <div className="divider">
-            <span>OR</span>
-          </div>
-
-          <button type="button" className="google-btn">
-            <img src="https://www.google.com/favicon.ico" alt="Google" />
-            Continue with Google
-          </button>
-
+          
           <p className="signup-link">
             Don't have an account? <a href="#register" onClick={(e) => { e.preventDefault(); onNavigate('register'); }}>Sign Up</a>
           </p>

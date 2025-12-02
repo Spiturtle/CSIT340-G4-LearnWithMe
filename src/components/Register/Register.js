@@ -59,8 +59,10 @@ const Register = ({ onNavigate }) => {
     <div className="register-container">
       <div className="register-card">
         <div className="register-header">
+
           <h1>Create Account</h1>
           <p>Start your learning journey with LearnWithMe</p>
+          
         </div>
 
         <form className="register-form" onSubmit={handleSubmit}>
@@ -163,15 +165,6 @@ const Register = ({ onNavigate }) => {
 
           <button type="submit" className="register-btn">
             Create Account
-          </button>
-
-          <div className="divider">
-            <span>OR</span>
-          </div>
-
-          <button type="button" className="google-btn">
-            <img src="https://www.google.com/favicon.ico" alt="Google" />
-            Sign up with Google
           </button>
 
           <p className="login-link">

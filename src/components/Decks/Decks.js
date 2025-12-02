@@ -77,7 +77,7 @@ const Decks = ({ onDeckSelect, selectedDeck, currentView, onBackToDecks }) => {
                 onClick={() => handleDeleteDeck(deck.id)}
                 title="Delete deck"
               >
-                🗑️
+                Delete Deck
               </button>
             </div>
             
@@ -86,11 +86,11 @@ const Decks = ({ onDeckSelect, selectedDeck, currentView, onBackToDecks }) => {
             
             <div className="deck-stats">
               <div className="stat">
-                <span className="stat-icon">📇</span>
+                <span className="stat-icon"></span>
                 <span>{deck.cardCount} cards</span>
               </div>
               <div className="stat">
-                <span className="stat-icon">🕒</span>
+                <span className="stat-icon"></span>
                 <span>{deck.lastStudied}</span>
               </div>
             </div>
@@ -115,12 +115,8 @@ const Decks = ({ onDeckSelect, selectedDeck, currentView, onBackToDecks }) => {
         {/* Empty State */}
         {decks.length === 0 && (
           <div className="empty-state">
-            <div className="empty-icon">📚</div>
             <h3>No decks yet</h3>
             <p>Create your first deck to start studying!</p>
-            <button className="create-deck-btn" onClick={() => setShowCreateModal(true)}>
-              <span>+</span> Create Deck
-            </button>
           </div>
         )}
       </div>
